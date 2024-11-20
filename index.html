@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Member List</h1>
+        <div id="clock" class="clock"></div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchByName" placeholder="Search by Name">
+        <input type="text" id="searchByContact" placeholder="Search by Contact">
+        <button class="print-btn" onclick="printPage()">Print</button>
+    </div>
+
+    <table id="memberTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be populated dynamically -->
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>&copy; 2024 - প্রত্যয় স্বেচ্ছাসেবী সংগঠন</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

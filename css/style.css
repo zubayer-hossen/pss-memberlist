@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co.com/BTpm5MV/6508.jpg")no-repeat center center/cover;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in effect for body */
+}
+
+/* Header Styles with Animated Background */
+.header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Animated gradient for background */
+}
+
+
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    animation: slideIn 1.5s ease-out;
+    /* Slide-in effect for the header title */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.clock {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in for clock */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in effect for search container */
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: 250px;
+    transition: border 0.3s;
+}
+
+.search-container input:focus {
+    border: 2px solid #28A745;
+}
+
+.print-btn {
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in effect for print button */
+}
+
+.print-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#memberTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in for the table */
+}
+
+#memberTable th,
+#memberTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#memberTable th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Gradient effect for table rows with pink, green, and ash colors */
+#memberTable tr:nth-child(even) {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    animation: rowSlideIn 2s ease-in-out;
+    /* Animation for even rows */
+}
+
+#memberTable tr:nth-child(odd) {
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    animation: rowSlideIn 2s ease-in-out;
+    /* Animation for odd rows */
+}
+
+@keyframes rowSlideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#memberTable tr:hover {
+    background-color: #28A745;
+    color: rgb(255, 0, 0);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    animation: fadeIn 2s ease-in-out;
+    /* Fade-in for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .clock {
+        font-size: 1.2rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    #memberTable {
+        width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        margin: 0;
+        color: #333;
+    }
+
+    .search-container,
+    .print-btn,
+    .footer {
+        display: none;
+    }
+
+    #memberTable {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: transparent;
+    }
+
+    #memberTable th,
+    #memberTable td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        background-color: transparent;
+    }
+
+    /* Watermark */
+    body:before {
+        content: "প্রত্যয় স্বেচ্ছাসেবী সংগঠন";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        white-space: nowrap;
+        pointer-events: none;
+        display: block;
+    }
+}
+
+/* Fade-in animation for content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
