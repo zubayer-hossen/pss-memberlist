@@ -1,10 +1,11 @@
 /* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("https://i.ibb.co.com/BTpm5MV/6508.jpg")no-repeat center center/cover;
+    background: url("../img/12102004_4909530.jpg")no-repeat center center/cover;
     color: #333;
     animation: fadeIn 2s ease-in-out;
     /* Fade-in effect for body */
@@ -143,6 +144,38 @@ body {
     color: rgb(255, 0, 0);
 }
 
+.pending {
+    color: red;
+    animation: colorShift 1.5s ease-in-out infinite, bounce 1s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        color: wheat;
+    }
+
+    50% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 .footer {
     text-align: center;
     margin-top: 20px;

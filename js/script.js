@@ -40,7 +40,7 @@ function populateTable(data) {
             <td>${member.id}</td>
             <td>${member.name}</td>
             <td>${member.address}</td>
-            <td>${member.contact}</td>
+            <td class="${member.contact===""?"pending":""}">${member.contact===""? "Proccessing...": member.contact}</td>
         `;
         tableBody.appendChild(row);
     });
