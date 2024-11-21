@@ -21,6 +21,7 @@ const members = [
     { name: "মোঃ জাহিদ হাসান", address: "জায়গীরমহল", contact: "০১৫১৬৩০৩৮৭৭" },
     { name: "নুর জামাল", address: "ঘুগরাকাটি", contact: "০১৯৮১২৯৯১৯৩" },
     { name: "শাহারিয়ার হোসেন", address: "আমাদী", contact: "" },
+    { name: "নাজমুল", address: "আমাদী", contact: "০১৬৩৭২৮৪১৬০" },
 ];
 
 // Map through the members array and add an ID based on the index
@@ -58,6 +59,7 @@ setInterval(() => {
 
 // Print Functionality
 function printPage() {
+    document.title = null;
     window.print();
 }
 
