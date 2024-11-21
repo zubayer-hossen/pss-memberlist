@@ -23,6 +23,7 @@ const members = [
     { name: "শাহারিয়ার হোসেন", address: "আমাদী", contact: "" },
     { name: "নাজমুল", address: "আমাদী", contact: "০১৬৩৭২৮৪১৬০" },
     { name: "অমিত সরকার", address: "কাটাখালি", contact: "০১৯৮২৮৪৪১১৬" },
+    { name: "মাসুম বিল্লাহ", address: "ষোলহালিয়া", contact: "" },
 ];
 
 // Map through the members array and add an ID based on the index
