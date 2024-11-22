@@ -20,7 +20,7 @@ const members = [
     { name: "গ্লোরিয়াস বয় ইউসুপ", address: "জায়গীরমহল", contact: "০১৯১০০৪৪০০৪" },
     { name: "মোঃ জাহিদ হাসান", address: "জায়গীরমহল", contact: "০১৫১৬৩০৩৮৭৭" },
     { name: "নুর জামাল", address: "ঘুগরাকাটি", contact: "০১৯৮১২৯৯১৯৩" },
-    { name: "শাহারিয়ার হোসেন", address: "আমাদী", contact: "" },
+    { name: "শাহারিয়ার হোসেন", address: "আমাদী", contact: "০১৬১১২০৯৮৭৫" },
     { name: "নাজমুল", address: "আমাদী", contact: "০১৬৩৭২৮৪১৬০" },
     { name: "অমিত সরকার", address: "কাটাখালি", contact: "০১৯৮২৮৪৪১১৬" },
     { name: "মাসুম বিল্লাহ", address: "ষোলহালিয়া", contact: "" },

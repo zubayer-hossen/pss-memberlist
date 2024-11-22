@@ -217,8 +217,7 @@ body {
     }
 
     .search-container,
-    .print-btn,
-    .footer {
+    .print-btn {
         display: none;
     }
 
